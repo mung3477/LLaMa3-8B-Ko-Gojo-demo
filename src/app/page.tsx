@@ -12,7 +12,7 @@ export default function Home() {
     <main>
     <Title/>
     <div className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-end p-[40px]">
-      <div className="w-full h-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+      <div className="w-full h-full max-w-5xl items-center justify-between font-mono text-sm">
         <div className="w-full h-full overflow-auto">
           {chats.map((chat, idx) => (idx % 2 === 1) ?
             <MyChat key={idx} text={chat}/>
